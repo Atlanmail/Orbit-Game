@@ -1,0 +1,21 @@
+Game is a Starsector clone
+
+
+What should be implemented
+- Logging in
+- Flying around
+- Warping to different planets
+- Text chat
+
+REST API
+    playerConnect
+    
+
+
+Written in
+
+Javascript to render the frontend with PhaserJs
+Backend written in NodeJs because its easy.
+
+
+https://gamedevacademy.org/how-to-create-a-phaser-3-mmorpg-part-1/?a=13
