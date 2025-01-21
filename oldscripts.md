@@ -1,0 +1,1 @@
+ ///"dev": "node log.js dev & webpack-dev-server --config webpack/config.js --open"    

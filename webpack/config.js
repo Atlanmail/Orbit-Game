@@ -5,8 +5,8 @@ const webpack = require("webpack");
 
 module.exports = {
     mode: "development",
-    devtool: "eval-source-map",
-    entry: "./src/main.js",
+    devtool: "source-map",
+    entry: "./public/main.js",
     output: {
         path: path.resolve(process.cwd(), 'dist'),
         filename: "bundle.min.js"
@@ -26,7 +26,10 @@ module.exports = {
             },
             {
                 test: /\.(gif|png|jpe?g|svg|xml|glsl)$/i,
-                use: "file-loader"
+                loader: "file-loader",
+                options: {
+                    name: '/assets/[name].[ext]'
+                }
             }
         ]
     },
